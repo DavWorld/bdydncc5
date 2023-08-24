@@ -122,7 +122,7 @@ class AudioRecorderKivyApp(App):
                 creds.refresh(Request())
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(
-                    r'C:\Users\HP\OneDrive\Desktop\TRU 2\tru.json', SCOPES)  # Replace with your client secret file
+                    r'bdydncc5/tru.json', SCOPES)  # Replace with your client secret file
                 creds = flow.run_local_server(port=0)
 
             with open('token.json', 'w') as token:
